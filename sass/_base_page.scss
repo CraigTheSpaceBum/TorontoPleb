@@ -1,0 +1,55 @@
+// @section    Main Layout
+
+body {
+   display: grid;
+   grid-template-columns: 1fr;
+   grid-template-rows: auto 1fr auto;
+   grid-template-areas:
+      'header'
+      'main'
+      'footer';
+   align-items: start;
+   width: 100vw;
+   height: 100vh;
+   background-size: cover;
+   background-position: bottom right;
+   background-attachment: fixed;
+}
+
+header {
+   grid-area: header;
+   margin: 0 0 20px 0;
+   padding: 10px 20px;
+
+   @media (min-width: 768px) {
+      margin: 0 0 40px 0;
+      padding: 20px 40px;
+   }
+}
+
+main {
+   grid-area: main;
+   align-self: start;
+   justify-self: center;
+   width: auto;
+   margin: 0 20px 20px 20px;
+   padding: 10px 20px;
+
+   @media (min-width: 768px) {
+      width: 1024px;
+      padding: 30px 60px;
+   }
+}
+
+footer {
+   grid-area: footer;
+   padding: 10px 20px;
+
+   p {
+      margin: 0;
+      font-size: 1rem;
+      text-align: right;
+   }
+
+   @media (min-width: 768px) {}
+}
