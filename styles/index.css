@@ -1,3 +1,8 @@
+.corset {
+  width: 1024px;
+  margin: auto;
+}
+
 body::after {
   display: none;
 }
@@ -447,46 +452,19 @@ body {
   align-items: start;
   width: 100vw;
   height: 100vh;
-  background-size: cover;
-  background-position: bottom right;
-  background-attachment: fixed;
 }
 
 header {
   grid-area: header;
-  margin: 0 0 20px 0;
-  padding: 10px 20px;
 }
-@media (min-width: 768px) {
-  header {
-    margin: 0 0 40px 0;
-    padding: 20px 40px;
-  }
-}
-
 main {
   grid-area: main;
   align-self: start;
   justify-self: center;
   width: auto;
-  margin: 0 20px 20px 20px;
-  padding: 10px 20px;
 }
-@media (min-width: 768px) {
-  main {
-    width: 1024px;
-    padding: 30px 60px;
-  }
-}
-
 footer {
   grid-area: footer;
-  padding: 10px 20px;
-}
-footer p {
-  margin: 0;
-  font-size: 1rem;
-  text-align: right;
 }
 body {
   font-family: Arial, sans-serif;
@@ -518,14 +496,42 @@ a {
 }
 
 header {
-  display: grid;
-  grid-template-rows: 1;
-  grid-template-columns: 50px 1fr 46px;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  background-color: #333;
 }
-@media (min-width: 768px) {
-  header {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
+header .corset {
+  display: grid;
+  grid-template-columns: 180px 1fr 180px;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+header .corset h1 {
+  margin: 0;
+  padding: 0;
+}
+header .corset nav {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  align-self: center;
+}
+header .corset nav button {
+  height: 40px;
+  margin-right: 0.25rem;
+  padding: 0.5rem 1rem;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #555;
+  border: 1px solid #fff;
+  cursor: pointer;
+}
+header .corset nav button:hover, header .corset nav button:active, header .corset nav button:focus {
+  background-color: #510a2f;
+}
+header .corset nav button:last-child {
+  margin-right: 0;
 }
 
 /***
