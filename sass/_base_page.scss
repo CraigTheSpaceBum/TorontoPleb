@@ -15,23 +15,46 @@ body {
 
 header {
    grid-area: header;
-
-   @media (min-width: 768px) {
-   }
 }
 
 main {
    grid-area: main;
    align-self: start;
    justify-self: center;
-   width: auto;
+   width: 100%;
+   margin: 0;
+   padding: 0;
+   color: $color7;
+   background-color: $color2;
 
-   @media (min-width: 768px) {
+   section {
+      width: auto;
    }
 }
 
 footer {
    grid-area: footer;
-
-   @media (min-width: 768px) {}
 }
+
+.corset {
+   width: auto;
+
+   &.tp-page {
+      padding: 0 1.5rem;
+
+      @media (min-width: 1024px) {
+         width: 1024px;
+         padding: 0;
+      }
+
+   }
+
+   @media (min-width: 1024px) {
+      width: 1024px;
+   }
+
+   img, svg {
+      max-width: 100%;
+   }
+}
+

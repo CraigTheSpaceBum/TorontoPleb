@@ -10,7 +10,10 @@
    <body>
       <header>
          <div class="corset">
-            <h1>Toronto Plebs</h1>
+            <a href="/" class="tp-logo">
+               <h1>Toronto Plebs</h1>
+               <img class="tp-logo__image" src="images/HXDZ.jpg" alt="Toronto Plebs Logo" />
+            </a>
             <nav>
                <button onclick="loadContent('home')">Home</button>
                <button onclick="loadContent('live')">Live</button>
@@ -18,6 +21,14 @@
                <button onclick="loadContent('about')">About</button>
                <button onclick="loadContent('shop')">Shop</button>
             </nav>
+            <div class="tp-header-links">
+               <div class="tp-nostr">
+                  <a href="https://njump.me/@torontoplebs.ca">Follow on Nostr</a>
+               </div>
+               <div class="tp-zap">
+                  <a href="https://zap.torontoplebs.ca/api/v1/invoices?storeId=3yTdaFGLa4QheQ9JKz7aGZUYUA4oiVxtzyXLvFueh3UR&currency=CAD">Zap Donation</a>
+               </div>
+            </div>
          </div>
       </header>
 
@@ -25,6 +36,11 @@
          <!-- Content will be loaded here based on button clicks -->
       </main>
 
-      <script src="scripts/script.js"></script>
+      <footer>
+         <div class="corset">
+            <div class="tp-sig">Made by <a href="https://mslmdvlpmnt.com" target="_blank">[ mslm dvlpmnt ]</a></div>
+         </div>
+         <script src="scripts/script.js"></script>
+      </footer>
    </body>
 </html>

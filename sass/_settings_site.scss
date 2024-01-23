@@ -5,8 +5,10 @@
 // @section    Page variables
 
 .corset {
-   width: 1024px;
-   margin: auto;
+   margin: 0 auto;
+}
+img {
+   max-width: 100%;
 }
 
 // @section                  Break points
