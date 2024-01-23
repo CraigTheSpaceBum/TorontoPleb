@@ -586,11 +586,11 @@ header .corset nav {
   text-align: center;
   align-self: center;
 }
-header .corset nav button {
+header .corset nav a {
   margin: 0;
   height: 40px;
   margin-right: 0.25rem;
-  padding: 0.25rem 0.5rem;
+  padding: 0.5rem 0.5rem;
   font-size: 1rem;
   text-transform: uppercase;
   color: #fff;
@@ -598,14 +598,14 @@ header .corset nav button {
   border: 1px solid #fff;
   cursor: pointer;
 }
-header .corset nav button:hover, header .corset nav button:active, header .corset nav button:focus {
+header .corset nav a:hover, header .corset nav a:active, header .corset nav a:focus {
   background-color: #510a2f;
 }
-header .corset nav button:last-child {
+header .corset nav a:last-child {
   margin-right: 0;
 }
 @media (min-width: 1024px) {
-  header .corset nav button {
+  header .corset nav a {
     font-size: 1.125rem;
   }
 }

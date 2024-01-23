@@ -15,11 +15,11 @@
                <img class="tp-logo__image" src="images/HXDZ.jpg" alt="Toronto Plebs Logo" />
             </a>
             <nav>
-               <button onclick="loadContent('home')">Home</button>
-               <button onclick="loadContent('live')">Live</button>
-               <button onclick="loadContent('education')">Education</button>
-               <button onclick="loadContent('about')">About</button>
-               <button onclick="loadContent('shop')">Shop</button>
+               <a href="index.html">Home</a>
+               <a href="live.html">Live</a>
+               <a href="education.html">Education</a>
+               <a href="about.html">About</a>
+               <a href="shop.html">Shop</a>
             </nav>
             <div class="tp-header-links">
                <div class="tp-nostr">
@@ -33,14 +33,37 @@
       </header>
 
       <main id="main-content">
-         <!-- Content will be loaded here based on button clicks -->
+
+
+         <div class="corset tp-page tp-page__home">
+            <section class="tp-intro">
+               <h2>Bitcoin, Nostr and Education</h2>
+            </section>
+
+            <section class="tp-meetups">
+               <div class="tp-meetups__text">
+                  <h2>Meet Ups!</h2>
+                  <p>Want to know when next Bitcoin or Nostr met up is in Toronto?</p>
+               </div>
+               <div class="tp-meetups__image">
+                  <img src="images/meetups.jpg" alt="Photo of one of our meet ups">
+               </div>
+            </section>
+            <section class="tp-image-gallery">
+               <img src="images/meetup01.jpg" alt="Photo of one of our meet ups">
+               <img src="images/meetup02.jpg" alt="Photo of one of our meet ups">
+               <img src="images/bitcoin-in-hand.jpg" alt="One physical Bitcoin in a hand">
+            </section>
+         </div>
+
+
       </main>
 
       <footer>
          <div class="corset">
             <div class="tp-sig">Made by <a href="https://mslmdvlpmnt.com" target="_blank">[ mslm dvlpmnt ]</a></div>
          </div>
-         <script src="scripts/script.js"></script>
+         <script src="scripts/jquery.min.js"></script>
       </footer>
    </body>
 </html>
