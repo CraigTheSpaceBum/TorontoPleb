@@ -11,6 +11,8 @@ body {
    align-items: start;
    //width: 100vw;
    height: 100vh;
+   color: $color7;
+   background-color: $color2;
 }
 
 header {
@@ -24,8 +26,6 @@ main {
    width: 100%;
    margin: 0;
    padding: 0;
-   color: $color7;
-   background-color: $color2;
 
    section {
       width: auto;

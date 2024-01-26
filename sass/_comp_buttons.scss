@@ -10,10 +10,15 @@
    color: $color7;
    background-color: $color1;
    border: 1px solid $color7;
+   border-radius: 7px;
 
    &:hover, &:active, &:focus {
       color: #fff;
       background-color: $color2;
       border: 1px solid #fff;
+   }
+   &::before {
+      height: 0;
+      background-color: transparent;
    }
 }
